@@ -1,0 +1,28 @@
+{
+    // General settings
+    "editor.formatOnSave": true,
+
+    // Python-specific settings
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true, 
+    "python.linting.flake8Enabled": true,
+    "python.pythonPath": ".venv/bin/python", // Path to your virtual environment
+
+    // Django-specific settings
+    "python.analysis.extraPaths": [
+        "./your_django_project" // Path to your main Django project folder
+    ],
+
+    // React/JavaScript-specific settings
+    "javascript.validate.enable": true,
+    "eslint.enable": true,
+    "prettier.eslintIntegration": true,
+
+    // Optional: Formatting for both Python and JavaScript/React
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
+}
